@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do-liste - Yapacaklarınızı düzenleyin</title>
+  <link rel="stylesheet" href="stil.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<section class="header">
+  <nav>
+    <a href="index.html">
+    <img decoding="async" src="todo_logo.png" alt=""/></a>
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="#aciklama">Neden To-do-list?</a></li>
+        <li><a href="#tema">Tema</a></li>
+        <li><a href="olustur.html">Oluştur</a></li>
+        <li><a href="#hakkinda">Hakkında</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="giris">
+    <h1>To-do-liste</h1>
+    <p>
+      Yapacaklar listenizi oluşturun ve düzenleyin. İşlerinizde organize olmak 
+      için şimdi başlayın.
+    </p>
+    <a href="olustur.html" class="baslabtn">Başlayın</a>
+  </div>
+</section>
+<section class="course" id="aciklama">
+  <h1>Neden To-do-liste kullanmalısınız?</h1>
+  <div class="row">
+    <div class="course-col">
+      <h3>Zaman Yönetimi</h3>
+      <p>
+        To-do-liste yapmak, zaman yönetimini kolaylaştırır. Aynı zamanda odaklanmayı
+        artırır. Günlük görevlerinizi öncelik sırasına koymak zihinde disiplin
+        sağlayarak hem kişisel hem profosyonel hayatınıza katkıda bulunur. 
+      </p>
+    </div>
+    <div class="course-col">
+      <h3>Üretkenlik</h3>
+      <p>
+        Tamamlanan görevleri görmek motivasyon sağlar ve üretkenliği 
+        artırır. Neye odaklanmanız gerektiğini daha iyi kavramaya
+        yardımcı olur. Böylece çalıştığınız konuda veya günlük hayatınızda
+        odak yardımı sağlar.
+      </p>
+    </div>
+    <div class="course-col">
+      <h3>Stres Azaltma</h3>
+      <p>
+      Yapmanız gerekenler çok olduğunda, görevlerinizi yazılı
+      hale getirmek, zihindeki karmaşayı azaltır ve ne yapmanız gerektiği konusunda net olmanızı
+       sağlar. Bu, işleri daha yönetilebilir hale getirir ve stres seviyenizi düşürür.  
+      </p>
+    </div>
+  </div>
+</section>
+<section class="cta" id="tema">
+  <h1>
+    Kişiselleştirebileceğiniz tema ile birlikte<br>
+    size uygun kullanım sağlar.
+  </h1>
+  <div class="toggle-container">
+  <input type="checkbox" class="checkbox" id="checkbox">
+  <label for="checkbox" class="checkbox-label">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <span class="ball"></span>
+  </label>
+</div>
+</section>
+<section class="olustur">
+  <h1>
+    Şimdi yapılacaklar listenizi oluşturun & <br />
+    işlerinizi tamamlandı olarak işaretlemeye hazır olun!
+  </h1>
+  <a href="olustur.html" class="baslabtn">OLUŞTUR</a>
+</section>
+<section class="course">
+  <h1>To-do-list her alanda kullanılmaya uygundur</h1>
+  <div class="row">
+    <div class="course-col">
+      <h3>Profosyonel Hayat</h3>
+      <p>
+        İş hayatınız zaman zaman yoğun olabilir, apacaklarınız yoğun olduğundaki
+        not tutma alışkanlığı ve yapacaklarınızı düzene koymak, günün sonundaki
+        yorgunluğu azaltmaya yardımcı olur ve profosyonelce iş yapılmasını sağlar.
+      </p>
+    </div>
+    <div class="course-col">
+      <h3>Kişisel Hayat</h3>
+      <p>
+        Seyahat planlamalarınızdan, alışveriş listesine kadar, gün içi planlarınızı
+        hazırlamaya yardımcı olur. Böylece adım adım işlerinizi yaparak belki kendinize 
+        ait bir zamanda yaratabilirsiniz. To-do-list bu alanda da herkese yardımcı olmaktadır.
+      </p>
+    </div>
+    <div class="course-col">
+      <h3>Eğitim Hayatı</h3>
+      <p>
+      To-do-list öğrencilerin zaman yönetimini kolaylaştırır. Ders programlarını,
+      sınav tarihlerini ve ödev teslim günlerini takip etmeyi sağlar. Özellikle 
+      sınav dönemlerinde odaklanmayı artırır ve başarıya katkı sağlar. Unutkanlığı önler
+      ve verimliliği sağlar.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="footer" id="hakkinda">
+  <h1>Hakkında</h1>
+  <div class="footer-intro">
+    <p>
+     "Bu websitesi günlük hayatında to-do-list kullanan insanlara<br>
+     daha iyi deneyim sunmak için tasarlanmıştır. "
+  </div>
+  <p>2025 - İrem Günay</p>
+</section>
+
+<!--Javascript Toggle Menu-->
+<script src="script.js">
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+  </script>
+</body>
+</html>
